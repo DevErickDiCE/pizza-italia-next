@@ -40,6 +40,11 @@ export const metadata: Metadata = {
     description: "Pizza artesanal en El Boalo. ¡2x1 los miércoles! Pide por WhatsApp.",
     images: ['/logo.png'],
   },
+  icons: {
+    icon: '/logo.png',
+    shortcut: '/logo.png',
+    apple: '/logo.png',
+  },
 };
 
 export default function RootLayout({

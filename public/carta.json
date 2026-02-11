@@ -1,0 +1,231 @@
+{
+  "restaurant": {
+    "name": "Pizza Italia",
+    "subtitle": "Mesón El Boalo",
+    "phone": "34617974474",
+    "whatsapp": "https://wa.me/34617974474",
+    "address": "Pl. de la Constitución, 10, El Boalo"
+  },
+  "categories": [
+    {
+      "id": "pizzas",
+      "name": "Pizzas",
+      "items": [
+        {
+          "id": "margarita",
+          "name": "Margarita",
+          "description": "La clásica que nunca falla: sencilla, auténtica y perfecta.",
+          "ingredients": "Salsa de tomate especial, queso de pizza, mozzarella, albahaca",
+          "prices": {
+            "mediana": 10.99,
+            "familiar": 12.99
+          },
+          "tags": [
+            "clasica",
+            "vegetariana",
+            "bestseller"
+          ],
+          "image": "/img/pizzas/margarita.jpg"
+        },
+        {
+          "id": "especial",
+          "name": "Pizza Especial",
+          "description": "Nuestra combinación estrella con los mejores ingredientes de la casa.",
+          "ingredients": "Salsa de tomate especial, queso de pizza, mozzarella, salami, jamón cocido, champiñones",
+          "prices": {
+            "mediana": 14.99,
+            "familiar": 16.99
+          },
+          "tags": [
+            "popular"
+          ],
+          "image": "/img/pizzas/especial.jpg"
+        },
+        {
+          "id": "salami",
+          "name": "Pizza Salami",
+          "description": "El sabor intenso del salami italiano sobre una base crujiente.",
+          "ingredients": "Salsa de tomate especial, queso de pizza, salami",
+          "prices": {
+            "mediana": 12.99,
+            "familiar": 14.99
+          },
+          "tags": [],
+          "image": "/img/pizzas/salami.jpg"
+        },
+        {
+          "id": "mediterranea",
+          "name": "Pizza Mediterránea",
+          "description": "Sabores del Mediterráneo que te transportan a la costa italiana.",
+          "ingredients": "Salsa de tomate especial, queso de pizza, tomate fresco, olivas, chorizo, albahaca",
+          "prices": {
+            "mediana": 15.99,
+            "familiar": 17.99
+          },
+          "tags": [],
+          "image": "/img/pizzas/mediterranea.jpg"
+        },
+        {
+          "id": "serrano",
+          "name": "Pizza Serrano",
+          "description": "Fusión hispano-italiana: jamón serrano, rúcula y parmesano.",
+          "ingredients": "Salsa de tomate especial, queso de pizza, jamón serrano, rúcula, queso parmesano",
+          "prices": {
+            "mediana": 17.99,
+            "familiar": 19.99
+          },
+          "tags": [
+            "premium"
+          ],
+          "image": "/img/pizzas/serrano.jpg"
+        },
+        {
+          "id": "cuatro-quesos",
+          "name": "Pizza 4 Quesos",
+          "description": "Para los amantes del queso: cuatro variedades fundidas a la perfección.",
+          "ingredients": "Salsa de tomate especial, queso de pizza, queso cabra, queso gorgonzola, queso parmesano, orégano",
+          "prices": {
+            "mediana": 16.99,
+            "familiar": 18.99
+          },
+          "tags": [
+            "vegetariana"
+          ],
+          "image": "/img/pizzas/4quesos.jpg"
+        },
+        {
+          "id": "barbacoa",
+          "name": "Pizza Barbacoa",
+          "description": "Contundente y sabrosa, bañada en nuestra salsa BBQ casera.",
+          "ingredients": "Salsa de tomate especial, salsa BBQ, queso de pizza, carne vacuno, bacon, jamón",
+          "prices": {
+            "mediana": 17.99,
+            "familiar": 19.99
+          },
+          "tags": [
+            "bestseller",
+            "carne"
+          ],
+          "image": "/img/pizzas/barbacoa.jpg"
+        },
+        {
+          "id": "atun",
+          "name": "Pizza Atún de la Casa",
+          "description": "Original y sorprendente con nuestra salsa curry especial.",
+          "ingredients": "Salsa curry especial, queso de pizza, atún, cebolla roja, aceitunas, pimiento rojo",
+          "prices": {
+            "mediana": 14.99,
+            "familiar": 16.99
+          },
+          "tags": [],
+          "image": "/img/pizzas/atun.jpg"
+        },
+        {
+          "id": "de-la-casa",
+          "name": "Pizza de la Casa",
+          "description": "Nuestra receta exclusiva: pollo, queso de cabra y verduras frescas.",
+          "ingredients": "Salsa de tomate especial, queso de pizza, cebolla roja, tiras de pollo, pimiento rojo, queso de cabra",
+          "prices": {
+            "mediana": 15.99,
+            "familiar": 17.99
+          },
+          "tags": [],
+          "image": "/img/pizzas/casa.jpg"
+        },
+        {
+          "id": "diavolo",
+          "name": "Pizza Diavolo",
+          "description": "Para valientes: el picante que enciende cada bocado.",
+          "ingredients": "Salsa de tomate especial, queso de pizza, chorizo, chili, pimiento rojo",
+          "prices": {
+            "mediana": 14.99,
+            "familiar": 16.99
+          },
+          "tags": [
+            "picante"
+          ],
+          "image": "/img/pizzas/diavolo.jpg"
+        },
+        {
+          "id": "vegetariana",
+          "name": "Pizza Vegetariana",
+          "description": "Fresca, colorida y llena de sabor con las mejores verduras.",
+          "ingredients": "Salsa de tomate especial, queso de pizza, cebolla, tomate cherry, aceitunas negras, rúcula, queso parmesano",
+          "prices": {
+            "mediana": 14.99,
+            "familiar": 16.99
+          },
+          "tags": [
+            "vegetariana"
+          ],
+          "image": "/img/pizzas/vegetariana.jpg"
+        },
+        {
+          "id": "oriental",
+          "name": "Pizza Oriental",
+          "description": "Un toque exótico con sucuk y especias de Oriente.",
+          "ingredients": "Salsa de tomate especial, queso Mozzarella, queso cabra, cebolla roja, sucuk, tomate cherry, pimiento rojo",
+          "prices": {
+            "mediana": 15.99,
+            "familiar": 17.99
+          },
+          "tags": [],
+          "image": "/img/pizzas/oriental.jpg"
+        },
+        {
+          "id": "napoli",
+          "name": "Pizza Napoli",
+          "description": "Receta napolitana tradicional con anchoas y aceitunas negras.",
+          "ingredients": "Salsa de tomate especial, queso pizza, anchoa, aceituna negra, tomate fresco, queso mozzarella",
+          "prices": {
+            "mediana": 15.99,
+            "familiar": 17.99
+          },
+          "tags": [
+            "clasica"
+          ],
+          "image": "/img/pizzas/napoli.jpg"
+        },
+        {
+          "id": "hawaiana",
+          "name": "Pizza Hawaiana",
+          "description": "El toque dulce de la piña con jamón cocido: una combinación irresistible.",
+          "ingredients": "Salsa de tomate especial, queso pizza, jamón cocido, piña a trozos",
+          "prices": {
+            "mediana": 14.99,
+            "familiar": 16.99
+          },
+          "tags": [],
+          "image": "/img/pizzas/hawaiana.jpg"
+        },
+        {
+          "id": "marinera",
+          "name": "Pizza Marinera",
+          "description": "Lo mejor del mar en cada porción: mariscos frescos y sabrosos.",
+          "ingredients": "Salsa hummer, queso pizza, queso mozzarella, camarones, mejillones, pata de pulpo, aceituna negra",
+          "prices": {
+            "mediana": 17.99,
+            "familiar": 19.99
+          },
+          "tags": [
+            "marisco",
+            "premium"
+          ],
+          "image": "/img/pizzas/marinera.jpg"
+        },
+        {
+          "id": "romana",
+          "name": "Pizza Romana",
+          "description": "Bacon crujiente, champiñones y queso de cabra: sabor romano.",
+          "ingredients": "Salsa de tomate especial, queso pizza, aceite de ajo, tiras de bacon, champiñones, aceituna negra, queso de cabra",
+          "prices": {
+            "mediana": 16.99,
+            "familiar": 18.99
+          },
+          "tags": [],
+          "image": "/img/pizzas/romana.jpg"
+        }
+      ]
+    }
+  ]
+}

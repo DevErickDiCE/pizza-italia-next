@@ -1,26 +1,119 @@
-@import "tailwindcss";
+/* Force rebuild */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Italian flag colors */
+    --verde-italiano: 31 107 58;
+    --rojo-tomate: 214 40 40;
+    --blanco-crema: 245 243 238;
+  }
+
+  body {
+    background-color: rgb(10, 10, 10);
+    color: rgb(250, 250, 250);
+  }
+
+  /* Reset link styles */
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: none;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  .font-display {
+    font-family: var(--font-bebas);
+  }
+
+  .font-body {
+    font-family: var(--font-inter);
+  }
+
+  .text-gradient-italia {
+    background: linear-gradient(to right, rgb(var(--verde-italiano)), rgb(var(--blanco-crema)), rgb(var(--rojo-tomate)));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+
+  .bg-gradient-verde {
+    background: linear-gradient(to bottom right, rgb(var(--verde-italiano)), rgb(5, 150, 105));
+  }
+
+  .bg-gradient-rojo {
+    background: linear-gradient(to bottom right, rgb(var(--rojo-tomate)), rgb(185, 28, 28));
+  }
+
+  .glow-verde {
+    box-shadow: 0 0 40px rgba(var(--verde-italiano), 0.4);
+  }
+
+  .glow-rojo {
+    box-shadow: 0 0 40px rgba(var(--rojo-tomate), 0.4);
+  }
+
+  .pizza-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  @media (min-width: 640px) {
+    .pizza-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .pizza-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  /* Pizza Modal */
+  .pizza-modal-container {
+    background: linear-gradient(145deg, rgba(23, 23, 23, 0.98), rgba(10, 10, 10, 0.99));
+    border: 1px solid rgba(212, 183, 106, 0.15);
+    max-height: 90vh;
+    max-height: 90dvh;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .pizza-modal-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Ingredient Chips */
+  .ingredient-chip {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.375rem 0.875rem;
+    border-radius: 9999px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    transition: all 0.3s ease;
+  }
+
+  .ingredient-chip:hover {
+    background: rgba(212, 183, 106, 0.15);
+    border-color: rgba(212, 183, 106, 0.3);
+    color: rgba(255, 255, 255, 1);
+    transform: translateY(-1px);
+  }
 }

@@ -46,7 +46,7 @@ export function PizzaCard({ pizza, index }: PizzaCardProps) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.5, delay: index * 0.05 }}
-            className="group flex flex-col items-center w-full max-w-[300px]"
+            className="group flex flex-col items-center w-full max-w-[300px] mx-auto"
         >
             {/* Circular Image Container (Masks the square image) */}
             <div className={`relative w-52 h-52 sm:w-60 sm:h-60 rounded-full overflow-hidden border-2 border-[#d4b76a]/30 shadow-[0_10px_30px_rgba(0,0,0,0.5)] group-hover:shadow-[0_20px_50px_rgba(212,183,106,0.2)] group-hover:border-[#d4b76a]/60 group-hover:scale-105 transition-all duration-500 z-20 bg-black ${isPasta ? 'border-none ring-2 ring-[#d4b76a]/20' : ''}`}>

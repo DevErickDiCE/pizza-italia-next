@@ -25,7 +25,7 @@
             "vegetariana",
             "bestseller"
           ],
-          "image": "/img/pizzas/margarita.jpg"
+          "image": "/img/pizzas/margarita.png"
         },
         {
           "id": "especial",
@@ -39,7 +39,7 @@
           "tags": [
             "popular"
           ],
-          "image": "/img/pizzas/especial.jpg"
+          "image": "/img/pizzas/especial.png"
         },
         {
           "id": "salami",
@@ -51,7 +51,7 @@
             "familiar": 14.99
           },
           "tags": [],
-          "image": "/img/pizzas/salami.jpg"
+          "image": "/img/pizzas/salami.png"
         },
         {
           "id": "mediterranea",
@@ -63,7 +63,7 @@
             "familiar": 17.99
           },
           "tags": [],
-          "image": "/img/pizzas/mediterranea.jpg"
+          "image": "/img/pizzas/mediterranea.png"
         },
         {
           "id": "serrano",
@@ -77,7 +77,7 @@
           "tags": [
             "premium"
           ],
-          "image": "/img/pizzas/serrano.jpg"
+          "image": "/img/pizzas/serrano.png"
         },
         {
           "id": "cuatro-quesos",
@@ -91,7 +91,7 @@
           "tags": [
             "vegetariana"
           ],
-          "image": "/img/pizzas/4quesos.jpg"
+          "image": "/img/pizzas/cuatro-quesos.png"
         },
         {
           "id": "barbacoa",
@@ -235,86 +235,100 @@
           "id": "carbonara",
           "name": "Pasta Carbonara",
           "description": "La clásica romana: cremosa, intensa y auténtica.",
-          "ingredients": "Pasta fresca · huevo · parmesano · bacon crujiente · pimienta negra",
+          "ingredients": "Pasta fresca · Tiras de bacon · champiñones · Salasa blanca especial · queso parmesano · perejil · pimienta negra",
           "prices": {
-            "plato": 12.99
+            "plato": 14.99
           },
           "tags": [
             "clasica"
           ],
-          "image": "/img/pastas/carbonara.jpg"
+          "image": "/img/pastas/carbonara.png"
         },
         {
           "id": "bolognesa",
           "name": "Pasta Boloñesa",
           "description": "Salsa casera cocinada a fuego lento con carne y tomate.",
-          "ingredients": "Pasta fresca · carne guisada · tomate italiano · albahaca · parmesano",
+          "ingredients": "Pasta fresca · aceite de ajo · cebolla blanca · trozos de zanahoria · carne picada de vacuno · salsa de tomate especial · champiñones",
           "prices": {
-            "plato": 13.99
+            "plato": 14.99
           },
           "tags": [
             "tradicional"
           ],
-          "image": "/img/pastas/bolognesa.jpg"
+          "image": "/img/pastas/bolognesa.png"
         },
         {
-          "id": "pesto",
-          "name": "Pasta al Pesto",
+          "id": "camaron",
+          "name": "Camaron Ardiente",
           "description": "Fresca, aromática y ligera con albahaca natural.",
-          "ingredients": "Pasta fresca · pesto genovés · piñones · parmesano · aceite de oliva",
+          "ingredients": "Pasta fresca ·  aceite de ajo · camaron · cebolla roja · pimienta roja · chili · tomate cherry · sal y pimienta",
           "prices": {
-            "plato": 12.49
+            "plato": 17.99
           },
           "tags": [
             "vegetariana"
           ],
-          "image": "/img/pastas/pesto.jpg"
+          "image": "/img/pastas/camaron.png"
         },
         {
-          "id": "arrabiata",
-          "name": "Pasta Arrabiata",
+          "id": "curry",
+          "name": "Pasta Al Curry",
           "description": "Picante suave con tomate y ajo al estilo tradicional italiano.",
-          "ingredients": "Pasta fresca · salsa de tomate · ajo · guindilla · perejil · aceite de oliva",
+          "ingredients": "Pasta fresca · cebolla roja · pimienta roja · Tiras de pollo · cebolla china · salsa de curry de la casa · rúcula",
           "prices": {
-            "plato": 12.99
+            "plato": 16.99
           },
           "tags": [
             "picante"
           ],
-          "image": "/img/pastas/arrabiata.jpg"
+          "image": "/img/pastas/curry.png"
         },
         {
-          "id": "marinera-pasta",
-          "name": "Pasta Marinera",
-          "description": "Sabores del mar con mariscos frescos y salsa ligera.",
-          "ingredients": "Pasta fresca · gambas · mejillones · calamares · tomate · vino blanco · ajo",
+          "id": "pomodoro",
+          "name": "Pasta Pomodoro",
+          "description": "( Al gusto del cliente ).",
+          "ingredients": "Pasta fresca · tomate cherry · salsa de tomate · salsa blanca de la casa · queso parmesano · perejil · pimienta negra y sal",
           "prices": {
-            "plato": 15.99
+            "plato": 11.99
           },
           "tags": [
             "marisco",
             "premium"
           ],
-          "image": "/img/pastas/marinera.jpg"
+          "image": "/img/pastas/pomodoro.png"
         },
         {
-          "id": "cuatro-quesos-pasta",
-          "name": "Pasta 4 Quesos",
+          "id": "verde",
+          "name": "Pasta Verde De La Casa",
           "description": "Para amantes del queso, cremosa y potente.",
-          "ingredients": "Mozzarella · gorgonzola · parmesano · cabra · nata",
+          "ingredients": "Tiras de pollo · tiras de zanahoria · cebolla china · tomaate cherry · salsa verde especial · queso parmesano",
           "prices": {
-            "plato": 14.49
+            "plato": 16.99
           },
           "tags": [
             "premium"
           ],
-          "image": "/img/pastas/cuatro-quesos.jpg"
+          "image": "/img/pastas/verde.png"
         },
         {
-          "id": "lasana",
-          "name": "Lasaña Casera",
+          "id": "mariskito",
+          "name": "Pastas Mariskito",
           "description": "Capas de pasta con carne, bechamel y queso gratinado al horno.",
-          "ingredients": "Carne guisada · pasta fresca · bechamel · mozzarella · parmesano · tomate",
+          "ingredients": "Pasta fresca · cebolla roja · cebolla china  · camaron· pata de pulpo · tomate cherry · salsa hummer",
+          "prices": {
+            "plato": 16.99
+          },
+          "tags": [
+            "horno",
+            "tradicional"
+          ],
+          "image": "/img/pastas/mariskito.png"
+        },
+        {
+          "id": "verduras",
+          "name": "Pasta Verduras",
+          "description": "Capas de pasta con carne, bechamel y queso gratinado al horno.",
+          "ingredients": "Pasta fresca · aceite de ajo · cebolla roja · tomate cherry · olivas · salsa tomate y blanca · queso parmesano · pimienta negra y sal",
           "prices": {
             "plato": 14.99
           },
@@ -322,7 +336,7 @@
             "horno",
             "tradicional"
           ],
-          "image": "/img/pastas/lasana.jpg"
+          "image": "/img/pastas/verduras.png"
         }
       ]
     }

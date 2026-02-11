@@ -8,19 +8,13 @@ import { ChevronDown, ChevronUp } from 'lucide-react';
 
 // Mapa corregido de imágenes
 const imageMap: Record<string, string> = {
-    'margarita': 'pizza_margherita_1770420145200.png',
     'napoli': 'pizza_margherita_1770420145200.png',
-    'especial': 'pizza_pepperoni_1770420158914.png',
-    'salami': 'pizza_pepperoni_1770420158914.png',
     'de-la-casa': 'pizza_pepperoni_1770420158914.png',
     'diavolo': 'pizza_diavola_1770420187032.png',
-    'mediterranea': 'pizza_diavola_1770420187032.png',
     'oriental': 'pizza_diavola_1770420187032.png',
     'vegetariana': 'pizza_vegetariana_1770420214358.png',
     'marinera': 'pizza_vegetariana_1770420214358.png',
     'hawaiana': 'pizza_prosciutto_1770420200743.png',
-    'serrano': 'pizza_prosciutto_1770420200743.png',
-    'cuatro-quesos': 'pizza_quattro_formaggi_1770420172300.png',
     'romana': 'pizza_quattro_formaggi_1770420172300.png',
 };
 

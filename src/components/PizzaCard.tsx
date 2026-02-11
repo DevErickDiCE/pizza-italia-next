@@ -31,8 +31,14 @@ interface PizzaCardProps {
 
 export function PizzaCard({ pizza, index }: PizzaCardProps) {
     const [isOpen, setIsOpen] = useState(false);
-    const imagePath = `/images/${imageMap[pizza.id] || 'pizza_margherita_1770420145200.png'}`;
-    const ingredients = pizza.ingredients.split(',').map(i => i.trim()).join(' • ');
+    const imagePath = imageMap[pizza.id]
+        ? `/images/${imageMap[pizza.id]}`
+        : (pizza.image || '/images/pizza_margherita_1770420145200.png');
+
+    const isPasta = !!pizza.prices.plato;
+    const ingredients = pizza.ingredients.includes('·')
+        ? pizza.ingredients
+        : pizza.ingredients.split(',').map(i => i.trim()).join(' • ');
 
     return (
         <motion.div
@@ -43,7 +49,7 @@ export function PizzaCard({ pizza, index }: PizzaCardProps) {
             className="group flex flex-col items-center w-full max-w-[300px]"
         >
             {/* Circular Image Container (Masks the square image) */}
-            <div className="relative w-52 h-52 sm:w-60 sm:h-60 rounded-full overflow-hidden border-2 border-[#d4b76a]/30 shadow-[0_10px_30px_rgba(0,0,0,0.5)] group-hover:shadow-[0_20px_50px_rgba(212,183,106,0.2)] group-hover:border-[#d4b76a]/60 group-hover:scale-105 transition-all duration-500 z-20 bg-black">
+            <div className={`relative w-52 h-52 sm:w-60 sm:h-60 rounded-full overflow-hidden border-2 border-[#d4b76a]/30 shadow-[0_10px_30px_rgba(0,0,0,0.5)] group-hover:shadow-[0_20px_50px_rgba(212,183,106,0.2)] group-hover:border-[#d4b76a]/60 group-hover:scale-105 transition-all duration-500 z-20 bg-black ${isPasta ? 'border-none ring-2 ring-[#d4b76a]/20' : ''}`}>
                 <Image
                     src={imagePath}
                     alt={pizza.name}
@@ -93,19 +99,34 @@ export function PizzaCard({ pizza, index }: PizzaCardProps) {
                     )}
                 </AnimatePresence>
 
-                <div className="flex justify-center items-center w-full mt-1" style={{ gap: '1.5rem' }}>
-                    <div className="flex flex-col items-center group/price">
-                        <span className="text-lg font-display text-[#d4b76a] mb-2 tracking-widest">M</span>
-                        <span className="text-3xl font-display text-white tracking-wider">{pizza.prices.mediana.toFixed(2)}<span className="text-xl align-top ml-1">€</span></span>
+                {isPasta ? (
+                    <div className="flex justify-center items-center w-full mt-1">
+                        <div className="flex flex-col items-center group/price">
+                            <span className="text-lg font-display text-[#d4b76a] mb-2 tracking-widest">PLATO</span>
+                            <span className="text-3xl font-display text-white tracking-wider">
+                                {pizza.prices.plato?.toFixed(2)}<span className="text-xl align-top ml-1">€</span>
+                            </span>
+                        </div>
                     </div>
+                ) : (
+                    <div className="flex justify-center items-center w-full mt-1" style={{ gap: '1.5rem' }}>
+                        <div className="flex flex-col items-center group/price">
+                            <span className="text-lg font-display text-[#d4b76a] mb-2 tracking-widest">M</span>
+                            <span className="text-3xl font-display text-white tracking-wider">
+                                {pizza.prices.mediana?.toFixed(2)}<span className="text-xl align-top ml-1">€</span>
+                            </span>
+                        </div>
 
-                    <div className="w-px h-12 bg-[#d4b76a]/50 mx-2"></div>
+                        <div className="w-px h-12 bg-[#d4b76a]/50 mx-2"></div>
 
-                    <div className="flex flex-col items-center group/price">
-                        <span className="text-lg font-display text-[#d4b76a] mb-2 tracking-widest">F</span>
-                        <span className="text-3xl font-display text-white tracking-wider">{pizza.prices.familiar.toFixed(2)}<span className="text-xl align-top ml-1">€</span></span>
+                        <div className="flex flex-col items-center group/price">
+                            <span className="text-lg font-display text-[#d4b76a] mb-2 tracking-widest">F</span>
+                            <span className="text-3xl font-display text-white tracking-wider">
+                                {pizza.prices.familiar?.toFixed(2)}<span className="text-xl align-top ml-1">€</span>
+                            </span>
+                        </div>
                     </div>
-                </div>
+                )}
             </div>
         </motion.div>
     );

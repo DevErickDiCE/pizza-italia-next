@@ -5,8 +5,9 @@ export interface Pizza {
     description?: string;
     ingredients: string;
     prices: {
-        mediana: number;
-        familiar: number;
+        mediana?: number;
+        familiar?: number;
+        plato?: number;
     };
     tags: string[];
     image: string;

@@ -15,12 +15,13 @@ async function getMenuData(): Promise<MenuData> {
 export default async function Home() {
   const menuData = await getMenuData();
   const pizzas = menuData.categories.find(cat => cat.id === 'pizzas')?.items || [];
+  const pastas = menuData.categories.find(cat => cat.id === 'pastas')?.items || [];
 
   return (
     <main className="min-h-screen">
       <Hero />
       <PromoBanner />
-      <PizzaGrid pizzas={pizzas} />
+      <PizzaGrid pizzas={pizzas} pastas={pastas} />
       <WhatsAppSection />
       <FloatingWhatsApp />
     </main>

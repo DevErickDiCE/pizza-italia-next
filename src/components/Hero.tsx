@@ -36,8 +36,8 @@ export function Hero() {
                     <Image
                         src="/logo.png"
                         alt="Pizza Italia Logo"
-                        width={700}
-                        height={350}
+                        width={612}
+                        height={408}
                         className="w-[450px] md:w-[700px] h-auto drop-shadow-2xl"
                         priority
                     />

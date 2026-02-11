@@ -226,6 +226,105 @@
           "image": "/img/pizzas/romana.jpg"
         }
       ]
+    },
+    {
+      "id": "pastas",
+      "name": "Pastas",
+      "items": [
+        {
+          "id": "carbonara",
+          "name": "Pasta Carbonara",
+          "description": "La clásica romana: cremosa, intensa y auténtica.",
+          "ingredients": "Pasta fresca · huevo · parmesano · bacon crujiente · pimienta negra",
+          "prices": {
+            "plato": 12.99
+          },
+          "tags": [
+            "clasica"
+          ],
+          "image": "/img/pastas/carbonara.jpg"
+        },
+        {
+          "id": "bolognesa",
+          "name": "Pasta Boloñesa",
+          "description": "Salsa casera cocinada a fuego lento con carne y tomate.",
+          "ingredients": "Pasta fresca · carne guisada · tomate italiano · albahaca · parmesano",
+          "prices": {
+            "plato": 13.99
+          },
+          "tags": [
+            "tradicional"
+          ],
+          "image": "/img/pastas/bolognesa.jpg"
+        },
+        {
+          "id": "pesto",
+          "name": "Pasta al Pesto",
+          "description": "Fresca, aromática y ligera con albahaca natural.",
+          "ingredients": "Pasta fresca · pesto genovés · piñones · parmesano · aceite de oliva",
+          "prices": {
+            "plato": 12.49
+          },
+          "tags": [
+            "vegetariana"
+          ],
+          "image": "/img/pastas/pesto.jpg"
+        },
+        {
+          "id": "arrabiata",
+          "name": "Pasta Arrabiata",
+          "description": "Picante suave con tomate y ajo al estilo tradicional italiano.",
+          "ingredients": "Pasta fresca · salsa de tomate · ajo · guindilla · perejil · aceite de oliva",
+          "prices": {
+            "plato": 12.99
+          },
+          "tags": [
+            "picante"
+          ],
+          "image": "/img/pastas/arrabiata.jpg"
+        },
+        {
+          "id": "marinera-pasta",
+          "name": "Pasta Marinera",
+          "description": "Sabores del mar con mariscos frescos y salsa ligera.",
+          "ingredients": "Pasta fresca · gambas · mejillones · calamares · tomate · vino blanco · ajo",
+          "prices": {
+            "plato": 15.99
+          },
+          "tags": [
+            "marisco",
+            "premium"
+          ],
+          "image": "/img/pastas/marinera.jpg"
+        },
+        {
+          "id": "cuatro-quesos-pasta",
+          "name": "Pasta 4 Quesos",
+          "description": "Para amantes del queso, cremosa y potente.",
+          "ingredients": "Mozzarella · gorgonzola · parmesano · cabra · nata",
+          "prices": {
+            "plato": 14.49
+          },
+          "tags": [
+            "premium"
+          ],
+          "image": "/img/pastas/cuatro-quesos.jpg"
+        },
+        {
+          "id": "lasana",
+          "name": "Lasaña Casera",
+          "description": "Capas de pasta con carne, bechamel y queso gratinado al horno.",
+          "ingredients": "Carne guisada · pasta fresca · bechamel · mozzarella · parmesano · tomate",
+          "prices": {
+            "plato": 14.99
+          },
+          "tags": [
+            "horno",
+            "tradicional"
+          ],
+          "image": "/img/pastas/lasana.jpg"
+        }
+      ]
     }
   ]
 }

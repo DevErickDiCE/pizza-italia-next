@@ -12,15 +12,18 @@ export function Hero() {
                 src="/images/pizza_margherita_1770420145200.png"
                 alt="Pizza artesanal italiana"
                 fill
-                className="object-cover object-center opacity-90"
+                className="object-cover object-center opacity-85"
                 priority
                 quality={95}
             />
 
-            {/* Simple Dark Overlay - No complex gradients to avoid banding lines */}
+            {/* Simple Dark Overlay */}
             <div className="absolute inset-0 bg-black/50" />
 
-            {/* Bottom Fade - Simple 2-stop gradient */}
+            {/* Cinematic Gradient - Adds depth to lower section */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-90" />
+
+            {/* Bottom Fade */}
             <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-black to-transparent" />
 
             {/* Content */}
@@ -38,7 +41,7 @@ export function Hero() {
                         alt="Pizza Italia Logo"
                         width={900}
                         height={600}
-                        className="w-[550px] md:w-[900px] h-auto drop-shadow-2xl"
+                        className="w-[600px] md:w-[980px] max-w-full h-auto drop-shadow-[0_10px_35px_rgba(0,0,0,0.5)]"
                         priority
                     />
                 </motion.div>
@@ -48,35 +51,86 @@ export function Hero() {
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="text-white text-xl md:text-3xl tracking-[0.4em] uppercase font-black mb-40 text-center relative z-20"
-                    style={{ textShadow: '0 4px 20px rgba(0,0,0,0.8)' }}
+                    className="text-white text-3xl md:text-5xl lg:text-6xl tracking-[0.3em] uppercase font-black mb-24 py-4 text-center relative z-20"
+                    style={{ textShadow: '0 4px 40px rgba(0,0,0,1)' }}
                 >
                     Auténtica cocina italiana
                 </motion.h2>
 
-                {/* Buttons - RECTANGULAR BLOCKS - MASSIVE TEXT */}
+                {/* CTAs — Elegant floating text */}
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4 }}
-                    className="flex flex-col md:flex-row items-center justify-center gap-16 w-full relative z-20"
+                    className="flex flex-col items-center gap-10 relative z-20"
                 >
-                    {/* Primary Button - White Block */}
                     <a
                         href="https://wa.me/34617974474?text=¡Hola!%20Quiero%20hacer%20una%20reserva"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-full md:w-auto min-w-[360px] px-14 py-7 bg-white text-black font-black tracking-widest text-2xl md:text-3xl uppercase text-center hover:bg-neutral-200 transition-transform hover:scale-105 shadow-2xl rounded-sm border-none ring-0 outline-none block"
-                        style={{ textDecoration: 'none' }}
+                        className="group relative"
+                        style={{
+                            color: '#ffffff',
+                            fontWeight: 700,
+                            letterSpacing: '0.2em',
+                            fontSize: '0.95rem',
+                            textTransform: 'uppercase' as const,
+                            textDecoration: 'none',
+                            textShadow: '0 2px 20px rgba(0,0,0,0.8)',
+                            transition: 'all 0.4s ease',
+                            cursor: 'pointer',
+                            paddingBottom: '4px',
+                            borderBottom: '1px solid rgba(255,255,255,0.3)'
+                        }}
+                        onMouseEnter={(e) => {
+                            e.currentTarget.style.borderBottom = '2px solid rgba(255,255,255,1)';
+                            e.currentTarget.style.textShadow = '0 0 30px rgba(255,255,255,0.6)';
+                            e.currentTarget.style.transform = 'translateY(-2px)';
+                        }}
+                        onMouseLeave={(e) => {
+                            e.currentTarget.style.borderBottom = '1px solid rgba(255,255,255,0.3)';
+                            e.currentTarget.style.textShadow = '0 2px 20px rgba(0,0,0,0.8)';
+                            e.currentTarget.style.transform = 'translateY(0)';
+                        }}
                     >
                         Reservar mesa
                     </a>
 
-                    {/* Secondary Button - Black Block */}
+                    {/* Decorative separator */}
+                    <div
+                        style={{
+                            width: '40px',
+                            height: '1px',
+                            background: 'rgba(255,255,255,0.35)',
+                        }}
+                    />
+
                     <a
                         href="#menu"
-                        className="w-full md:w-auto min-w-[360px] px-14 py-7 bg-black text-white font-black tracking-widest text-2xl md:text-3xl uppercase text-center hover:bg-neutral-900 transition-transform hover:scale-105 shadow-2xl rounded-sm border-none ring-0 outline-none block"
-                        style={{ textDecoration: 'none' }}
+                        className="group relative"
+                        style={{
+                            color: '#ffffff',
+                            fontWeight: 700,
+                            letterSpacing: '0.2em',
+                            fontSize: '0.95rem',
+                            textTransform: 'uppercase' as const,
+                            textDecoration: 'none',
+                            textShadow: '0 2px 20px rgba(0,0,0,0.8)',
+                            transition: 'all 0.4s ease',
+                            cursor: 'pointer',
+                            paddingBottom: '4px',
+                            borderBottom: '1px solid rgba(255,255,255,0.3)'
+                        }}
+                        onMouseEnter={(e) => {
+                            e.currentTarget.style.borderBottom = '2px solid rgba(255,255,255,1)';
+                            e.currentTarget.style.textShadow = '0 0 30px rgba(255,255,255,0.6)';
+                            e.currentTarget.style.transform = 'translateY(-2px)';
+                        }}
+                        onMouseLeave={(e) => {
+                            e.currentTarget.style.borderBottom = '1px solid rgba(255,255,255,0.3)';
+                            e.currentTarget.style.textShadow = '0 2px 20px rgba(0,0,0,0.8)';
+                            e.currentTarget.style.transform = 'translateY(0)';
+                        }}
                     >
                         Ver carta
                     </a>

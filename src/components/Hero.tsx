@@ -36,9 +36,9 @@ export function Hero() {
                     <Image
                         src="/logo.png"
                         alt="Pizza Italia Logo"
-                        width={612}
-                        height={408}
-                        className="w-[450px] md:w-[700px] h-auto drop-shadow-2xl"
+                        width={900}
+                        height={600}
+                        className="w-[550px] md:w-[900px] h-auto drop-shadow-2xl"
                         priority
                     />
                 </motion.div>

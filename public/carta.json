@@ -112,7 +112,7 @@
           "id": "atun",
           "name": "Pizza Atún de la Casa",
           "description": "Original y sorprendente con nuestra salsa curry especial.",
-          "ingredients": "Salsa curry especial, queso de pizza, atún, cebolla roja, aceitunas, pimiento rojo",
+          "ingredients": "Salsa tomate especial, queso de pizza, atún, cebolla roja, aceitunas, pimiento rojo",
           "prices": {
             "mediana": 14.99,
             "familiar": 16.99
@@ -124,7 +124,7 @@
           "id": "de-la-casa",
           "name": "Pizza de la Casa",
           "description": "Nuestra receta exclusiva: pollo, queso de cabra y verduras frescas.",
-          "ingredients": "Salsa de tomate especial, queso de pizza, cebolla roja, tiras de pollo, pimiento rojo, queso de cabra",
+          "ingredients": "Salsa de curry especial, queso de pizza, cebolla roja, tiras de pollo, pimiento rojo, queso de cabra",
           "prices": {
             "mediana": 15.99,
             "familiar": 17.99

@@ -235,14 +235,14 @@
           "id": "carbonara",
           "name": "Pasta Carbonara",
           "description": "La clásica romana: cremosa, intensa y auténtica.",
-          "ingredients": "Pasta fresca · Tiras de bacon · champiñones · Salasa blanca especial · queso parmesano · perejil · pimienta negra",
+          "ingredients": "Pasta fresca · Tiras de bacon · champiñones · Sala blanca especial · queso parmesano · perejil · pimienta negra",
           "prices": {
             "plato": 14.99
           },
           "tags": [
             "clasica"
           ],
-          "image": "/img/pastas/carbonara.png"
+          "image": "/img/pastas/pasta_carbonara.png"
         },
         {
           "id": "bolognesa",
@@ -255,7 +255,7 @@
           "tags": [
             "tradicional"
           ],
-          "image": "/img/pastas/bolognesa.png"
+          "image": "/img/pastas/pasta_boloñesa.png"
         },
         {
           "id": "camaron",
@@ -268,7 +268,7 @@
           "tags": [
             "vegetariana"
           ],
-          "image": "/img/pastas/camaron.png"
+          "image": "/img/pastas/pasta_camaron_ardiente.png"
         },
         {
           "id": "curry",
@@ -281,7 +281,7 @@
           "tags": [
             "picante"
           ],
-          "image": "/img/pastas/curry.png"
+          "image": "/img/pastas/pasta_curry.png"
         },
         {
           "id": "pomodoro",
@@ -295,7 +295,7 @@
             "marisco",
             "premium"
           ],
-          "image": "/img/pastas/pomodoro.png"
+          "image": "/img/pastas/pasta_pomodoro.png"
         },
         {
           "id": "verde",
@@ -308,7 +308,7 @@
           "tags": [
             "premium"
           ],
-          "image": "/img/pastas/verde.png"
+          "image": "/img/pastas/pasta_verde_casa.png"
         },
         {
           "id": "mariskito",
@@ -322,7 +322,7 @@
             "horno",
             "tradicional"
           ],
-          "image": "/img/pastas/mariskito.png"
+          "image": "/img/pastas/pasta_mariskito.png"
         },
         {
           "id": "verduras",
@@ -336,7 +336,7 @@
             "horno",
             "tradicional"
           ],
-          "image": "/img/pastas/verduras.png"
+          "image": "/img/pastas/pasta_verduras.png"
         }
       ]
     }

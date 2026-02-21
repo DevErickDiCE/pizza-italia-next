@@ -25,7 +25,7 @@
             "vegetariana",
             "bestseller"
           ],
-          "image": "/img/pizzas/margarita.png"
+          "image": "/img/pizzas/pizza_margarita.png"
         },
         {
           "id": "especial",
@@ -39,7 +39,7 @@
           "tags": [
             "popular"
           ],
-          "image": "/img/pizzas/especial.png"
+          "image": "/img/pizzas/pizza_especial.png"
         },
         {
           "id": "salami",
@@ -51,7 +51,7 @@
             "familiar": 14.99
           },
           "tags": [],
-          "image": "/img/pizzas/salami.png"
+          "image": "/img/pizzas/pizza_salami.png"
         },
         {
           "id": "mediterranea",
@@ -63,7 +63,7 @@
             "familiar": 17.99
           },
           "tags": [],
-          "image": "/img/pizzas/mediterranea.png"
+          "image": "/img/pizzas/pizza_mediterranea.png"
         },
         {
           "id": "serrano",
@@ -77,7 +77,7 @@
           "tags": [
             "premium"
           ],
-          "image": "/img/pizzas/serrano.png"
+          "image": "/img/pizzas/pizza_serrano.png"
         },
         {
           "id": "cuatro-quesos",
@@ -91,7 +91,7 @@
           "tags": [
             "vegetariana"
           ],
-          "image": "/img/pizzas/cuatro-quesos.png"
+          "image": "/img/pizzas/pizaa_4_quesos.png"
         },
         {
           "id": "barbacoa",
@@ -106,7 +106,7 @@
             "bestseller",
             "carne"
           ],
-          "image": "/img/pizzas/barbacoa.jpg"
+          "image": "/img/pizzas/pizza_barbacoa.png"
         },
         {
           "id": "atun",
@@ -118,7 +118,7 @@
             "familiar": 16.99
           },
           "tags": [],
-          "image": "/img/pizzas/atun.jpg"
+          "image": "/img/pizzas/pizza_atun.png"
         },
         {
           "id": "de-la-casa",
@@ -130,7 +130,7 @@
             "familiar": 17.99
           },
           "tags": [],
-          "image": "/img/pizzas/casa.jpg"
+          "image": "/img/pizzas/pizza_casa.png"
         },
         {
           "id": "diavolo",
@@ -144,7 +144,7 @@
           "tags": [
             "picante"
           ],
-          "image": "/img/pizzas/diavolo.jpg"
+          "image": "/img/pizzas/pizza_diavolo.png"
         },
         {
           "id": "vegetariana",
@@ -158,7 +158,7 @@
           "tags": [
             "vegetariana"
           ],
-          "image": "/img/pizzas/vegetariana.jpg"
+          "image": "/img/pizzas/pizza_vegetariana.png"
         },
         {
           "id": "oriental",
@@ -170,7 +170,7 @@
             "familiar": 17.99
           },
           "tags": [],
-          "image": "/img/pizzas/oriental.jpg"
+          "image": "/img/pizzas/pizza_oriental.png"
         },
         {
           "id": "napoli",
@@ -184,7 +184,7 @@
           "tags": [
             "clasica"
           ],
-          "image": "/img/pizzas/napoli.jpg"
+          "image": "/img/pizzas/pizza_napoli.png"
         },
         {
           "id": "hawaiana",
@@ -196,7 +196,7 @@
             "familiar": 16.99
           },
           "tags": [],
-          "image": "/img/pizzas/hawaiana.jpg"
+          "image": "/img/pizzas/pizza_hawaiana.png"
         },
         {
           "id": "marinera",
@@ -211,7 +211,7 @@
             "marisco",
             "premium"
           ],
-          "image": "/img/pizzas/marinera.jpg"
+          "image": "/img/pizzas/pizza_marinera.png"
         },
         {
           "id": "romana",
@@ -223,7 +223,7 @@
             "familiar": 18.99
           },
           "tags": [],
-          "image": "/img/pizzas/romana.jpg"
+          "image": "/img/pizzas/pizza_romana.png"
         }
       ]
     },

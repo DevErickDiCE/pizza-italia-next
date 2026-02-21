@@ -6,18 +6,6 @@ import Image from 'next/image';
 import { Pizza } from '@/types/menu';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 
-// Mapa corregido de imágenes
-const imageMap: Record<string, string> = {
-    'napoli': 'pizza_margherita_1770420145200.png',
-    'de-la-casa': 'pizza_pepperoni_1770420158914.png',
-    'diavolo': 'pizza_diavola_1770420187032.png',
-    'oriental': 'pizza_diavola_1770420187032.png',
-    'vegetariana': 'pizza_vegetariana_1770420214358.png',
-    'marinera': 'pizza_vegetariana_1770420214358.png',
-    'hawaiana': 'pizza_prosciutto_1770420200743.png',
-    'romana': 'pizza_quattro_formaggi_1770420172300.png',
-};
-
 interface PizzaCardProps {
     pizza: Pizza;
     index: number;
@@ -25,9 +13,7 @@ interface PizzaCardProps {
 
 export function PizzaCard({ pizza, index }: PizzaCardProps) {
     const [isOpen, setIsOpen] = useState(false);
-    const imagePath = imageMap[pizza.id]
-        ? `/images/${imageMap[pizza.id]}`
-        : (pizza.image || '/images/pizza_margherita_1770420145200.png');
+    const imagePath = pizza.image || '/img/pizzas/pizza_margarita.png';
 
     const isPasta = !!pizza.prices.plato;
     const ingredients = pizza.ingredients.includes('·')

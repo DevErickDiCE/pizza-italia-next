@@ -18,7 +18,7 @@ export function WhatsAppSection() {
                 <motion.a
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.98 }}
-                    href="https://wa.me/34617974474"
+                    href="https://wa.me/34672805740"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{
@@ -101,7 +101,7 @@ export function WhatsAppSection() {
                         <MapPin size={20} style={{ color: '#d4b76a' }} />
                     </div>
                     <h3 className="font-display" style={{ fontSize: '0.9rem', fontWeight: 'bold', marginBottom: '0.25rem', color: '#d4b76a', letterSpacing: '0.03em' }}>MESÓN EL BOALO</h3>
-                    <p style={{ color: '#737373', fontSize: '0.75rem' }}>C/ Real, 12 · El Boalo</p>
+                    <p style={{ color: '#737373', fontSize: '0.75rem' }}>C/ La Constitución, 10 · El Boalo</p>
                 </motion.div>
 
                 {/* Horario */}
@@ -136,14 +136,14 @@ export function WhatsAppSection() {
                     </div>
                     <h3 className="font-display" style={{ fontSize: '0.9rem', fontWeight: 'bold', marginBottom: '0.25rem', color: '#d4b76a', letterSpacing: '0.03em' }}>HORARIO</h3>
                     <p style={{ color: '#737373', fontSize: '0.7rem', lineHeight: '1.5' }}>
-                        Mar – Dom<br />13:00 – 16:00<br />20:00 – 23:30
+                        Lunes – Domingo<br />08:00 – 23:30
                     </p>
                 </motion.div>
 
                 {/* Teléfono */}
                 <motion.a
                     whileHover={{ scale: 1.03, y: -3 }}
-                    href="tel:+34617974474"
+                    href="tel:+34672805740"
                     style={{
                         background: 'linear-gradient(145deg, #1a1a1a 0%, #141414 100%)',
                         borderRadius: '1rem',
@@ -174,7 +174,7 @@ export function WhatsAppSection() {
                         <Phone size={20} style={{ color: '#d4b76a' }} />
                     </div>
                     <h3 className="font-display" style={{ fontSize: '0.9rem', fontWeight: 'bold', marginBottom: '0.25rem', color: '#d4b76a', letterSpacing: '0.03em' }}>TELÉFONO</h3>
-                    <p style={{ color: '#a3a3a3', fontSize: '0.875rem', fontWeight: '600' }}>617 974 474</p>
+                    <p style={{ color: '#a3a3a3', fontSize: '0.875rem', fontWeight: '600' }}>672 805 740</p>
                 </motion.a>
 
             </div>

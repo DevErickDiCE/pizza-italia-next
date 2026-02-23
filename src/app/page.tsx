@@ -1,4 +1,5 @@
 import { Hero } from '@/components/Hero';
+import { PromoViernes } from '@/components/PromoViernes';
 import { PromoBanner } from '@/components/PromoBanner';
 import { PizzaGrid } from '@/components/PizzaGrid';
 import { WhatsAppSection } from '@/components/WhatsAppSection';
@@ -22,6 +23,7 @@ export default async function Home() {
       <Hero />
       <PromoBanner />
       <PizzaGrid pizzas={pizzas} pastas={pastas} />
+      <PromoViernes />
       <WhatsAppSection />
       <FloatingWhatsApp />
     </main>

@@ -2,10 +2,10 @@
 
 import { motion } from 'framer-motion';
 
-export function PromoBanner() {
+export function PromoViernes() {
     return (
         <section
-            className="py-40 md:py-48 text-center relative overflow-hidden"
+            className="pt-32 pb-16 md:pt-40 md:pb-24 text-center relative overflow-hidden"
             style={{
                 background: 'radial-gradient(circle at center, #151515 0%, #0a0a0a 40%, #000000 75%)'
             }}
@@ -33,10 +33,10 @@ export function PromoBanner() {
                     transition={{ duration: 1 }}
                     className="text-xs md:text-sm tracking-[0.6em] text-white/50 uppercase mb-14"
                 >
-                    Solo los miércoles
+                    Solo los viernes
                 </motion.p>
 
-                {/* 2×1 - GIGANTE como antes */}
+                {/* 3+1 - GIGANTE */}
                 <motion.h2
                     initial={{ opacity: 0, scale: 0.95 }}
                     whileInView={{ opacity: 1, scale: 1 }}
@@ -48,31 +48,32 @@ export function PromoBanner() {
                         letterSpacing: '-0.03em'
                     }}
                 >
-                    2×1
+                    3<span className="text-[6rem] md:text-[9rem] lg:text-[12rem] mx-2 align-middle">+</span>1
                 </motion.h2>
 
-                {/* Subtitle */}
+                {/* Subtitle Line 1 */}
                 <motion.p
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 1, delay: 0.2 }}
-                    className="text-sm md:text-lg tracking-[0.5em] text-white/70 uppercase mb-4"
+                    className="text-sm md:text-lg tracking-[0.3em] md:tracking-[0.5em] text-white/70 uppercase mb-4"
                 >
-                    En todas las pizzas
+                    Compras 3 pizzas familiares
                 </motion.p>
 
+                {/* Subtitle Line 2 */}
                 <motion.p
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 1, delay: 0.3 }}
-                    className="text-[10px] md:text-xs tracking-[0.2em] md:tracking-[0.3em] text-white/40 uppercase mb-16"
+                    className="text-sm md:text-lg tracking-[0.3em] md:tracking-[0.5em] text-white/70 uppercase mb-16"
                 >
-                    ( Solo para recogida )
+                    Y te regalamos una mediana
                 </motion.p>
 
-                {/* Italian tricolor line - 5 step smooth gradient */}
+                {/* Italian tricolor line - bottom */}
                 <motion.div
                     initial={{ opacity: 0, scaleX: 0 }}
                     whileInView={{ opacity: 0.8, scaleX: 1 }}

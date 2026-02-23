@@ -47,6 +47,8 @@ export const metadata: Metadata = {
   },
 };
 
+import { Footer } from "@/components/Footer";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -57,6 +59,7 @@ export default function RootLayout({
       <body className="bg-neutral-950 text-neutral-50 font-inter antialiased">
         <SmoothScroll />
         {children}
+        <Footer />
         <div id="modal-root"></div>
       </body>
     </html>

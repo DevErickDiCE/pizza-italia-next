@@ -1,0 +1,23 @@
+.footer {
+    background-color: #050505;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+.text {
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.link {
+    color: #d4b76a;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #e8cc82;
+}

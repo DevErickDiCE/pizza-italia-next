@@ -1,7 +1,7 @@
 .footer {
     background-color: #050505;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
-    padding: 1.5rem 1rem;
+    padding: 2.5rem 1rem 2rem;
     text-align: center;
 }
 
@@ -9,6 +9,21 @@
     font-size: 0.7rem;
     letter-spacing: 0.15em;
     color: rgba(255, 255, 255, 0.3);
+}
+
+.separator {
+    margin: 0 0.6rem;
+    color: rgba(255, 255, 255, 0.15);
+}
+
+.legalLink {
+    color: rgba(255, 255, 255, 0.4);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.legalLink:hover {
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .link {

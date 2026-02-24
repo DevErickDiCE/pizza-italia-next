@@ -65,7 +65,7 @@ export function Hero() {
                     className="flex flex-col items-center gap-10 relative z-20"
                 >
                     <a
-                        href="https://wa.me/34617974474?text=¡Hola!%20Quiero%20hacer%20una%20reserva"
+                        href="https://wa.me/34672805740?text=¡Hola!%20Quiero%20hacer%20una%20reserva"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="group relative"
